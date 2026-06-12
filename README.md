@@ -71,7 +71,7 @@ The `.arch` format uses a simple binary layout:
 {
 ##Tip for quick run:
     cargo run -- pack file1.txt file2.txt --password "secret123"  [password is optional]
-    cargo run -- unpack output.arch --password "secret123" [if you doesn't set any password just skip the --paswoord]
+    cargo run -- unpack output.arch --password "secret123" [if you didn't set any password just skip the --passwoord]
 }
 
 The entire stream is optionally XOR-encrypted using a repeating key derived from the password — applied transparently via custom `XorWriter` and `XorReader` wrappers that implement Rust's standard `Write` and `Read` traits.
